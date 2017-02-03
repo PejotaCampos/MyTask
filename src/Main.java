@@ -2,6 +2,7 @@
 public class Main {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello");
+		Carro car = new Carro("Corsa", 130, 2);
+		System.out.println(car.toString());
 	}
 }
