@@ -1,3 +1,4 @@
+import java.lang.annotation.Documented;
 
 public class Carro {
 	
@@ -21,6 +22,19 @@ public class Carro {
 		retorno += " \nPotência: " + this.potencia;
 		return retorno;
 		
+	}
+	
+	public int getVelocidade()
+	{return this.velocidade;}
+	
+	public void acelerar()
+	{
+		this.velocidade = this.velocidade*potencia;
+	}
+	
+	public void frear()
+	{
+		this.velocidade -= 5;
 	}
 
 }
